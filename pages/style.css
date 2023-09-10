@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+/* * {
+	outline: 1px dashed black;
+}
+div, p, li {
+	outline: 1px solid blue;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bruno Ace SC", cursive, serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+/* padding setting */
+.py-40 {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+/* margin setting */
+.mr-4 {
+  margin-right: 16px;
+}
+.mr-6 {
+  margin-right: 24px;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.mb-7 {
+  margin-bottom: 28px;
+}
+.mb-8 {
+  margin-bottom: 32px;
+}
+.mb-9 {
+  margin-bottom: 36px;
+}
+
+/* font size setting */
+.fz-24 {
+  font-size: 24px;
+}
+
+/* flex setting */
+.flex {
+  display: flex;
+}
+.flex.column {
+  flex-direction: column;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}
+.jc-between {
+  justify-content: space-between;
+}
+.ai-center {
+  align-items: center;
+}
+.ai-start {
+  align-items: flex-start;
+}
+.as-end {
+  align-self: flex-end;
+}
+
+/* title */
+.title {
+  font-size: 64px;
+}
+.title.white {
+  color: #fff;
+}
+
+/* link button */
+.link-btn {
+  padding: 12px 24px;
+  border-radius: 32px;
+}
+.link-btn.white {
+  background: #fff;
+  color: #000;
+}
+.link-btn.white:hover {
+  box-shadow: 0 0 20px 5px white;
+}
+.link-btn.black {
+  background: #000;
+  color: #fff;
+}
+.link-btn.black:hover {
+  box-shadow: 0 0 20px 5px gray;
+}
+.link-btn:hover {
+  color: red;
+}
+.link-btn span {
+  margin-right: 4px;
+}
+
+/* header */
+.header {
+  padding-top: 40px;
+  background: #000000;
+  color: #d1d1d1;
+}
+.header a:hover {
+  color: red;
+}
+
+/* banner */
+.banner {
+  padding: 72px 0;
+  background: #000000;
+}
+.banner h1 {
+  color: #00ffa3;
+  font-size: 128px;
+  text-align: right;
+}
+
+/* introduction */
+.intro {
+  background-image: url("images/background-img.png");
+  background-size: cover;
+  color: #ffffff;
+}
+.intro .desc {
+  width: 526px;
+}
+.sparkle {
+  column-gap: 16px;
+}
+
+/* about me */
+.about-card {
+  width: calc((100% - 24px) / 2);
+  gap: 24px;
+}
+.about-card > li {
+  width: calc((100% - 24px) / 2);
+  padding: 16px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+}
+.about-card h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.about-desc {
+  width: 526px;
+}
+
+/* contact me */
+.contact {
+  padding: 96px 0;
+  background-image: linear-gradient(rgba(5, 0, 20, 1), rgba(1, 2, 30, 0.89));
+}
+.trend {
+  width: 100px;
+}
+.contact .link {
+  column-gap: 20px;
+}
+.contact .link img {
+  width: 162px;
+  border-radius: 40px;
+}
+.contact .link img:hover {
+  box-shadow: 0 0 16px 3px rgba(144, 148, 255, 0.9);
+}
+
+/* my projects */
+.project .title {
+  width: 746px;
+  margin-left: auto;
+}
+
+/* footer */
+.footer {
+  padding: 40px 0;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+}

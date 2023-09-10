@@ -1,19 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week2</title>
 
-    <%- include('./layout/footer'); -%>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="header">
+    <ul class="container flex jc-between">
+      <li data-aos="flip-left">WILLIAM LEE</li>
+      <li data-aos="flip-left">BASED IN TAIWAN</li>
+      <li data-aos="flip-left">CURRENTLY FRONT END<br />ENGINEER AT HEXSCHOOL</li>
+      <li data-aos="flip-left"><a href="#contact_me">CONTACT ME</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- banner -->
+  <div class="banner">
+    <div class="container flex ai-center">
+
+      <img src="images/people.png" alt="william" class="mr-6" data-aos="zoom-in-up">
+
+      <div class="flex column">
+        <h2 class="title white" data-aos="fade-left">Hi<br />I’m a front-end developer</h2>
+        <h1 data-aos="fade-up">William</h1>
+        <a href="#contact_me" class="link-btn white as-end" data-aos="fade-up">
+          <span>contact me</span>
+          <img src="images/arrow_outward.png" alt="arrow">
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- introduction -->
+  <div class="intro py-40">
+    <div class="container flex jc-between">
+
+      <!-- description -->
+      <div class="desc">
+        <h2 class="title mb-9" data-aos="fade-right">Introduction</h2>
+
+        <p class="fz-24 mb-8" data-aos="fade-right">Hi, I'm William Lee, a Front-End Developer with a passion for
+          building beautiful and responsive websites that provide an optimal user experience.</p>
+
+        <div class="sparkle flex" data-aos="fade-up" data-aos-once="false">
+          <img src="images/sparkle-sm.png" alt="sparkle">
+          <img src="images/sparkle-sm.png" alt="sparkle">
+          <img src="images/sparkle-sm.png" alt="sparkle">
+        </div>
+      </div>
+
+      <img src="images/sparkle.png" alt="sparkle" data-aos="fade-left" data-aos-once="false">
+      <img src="images/photographer.png" alt="photographer" data-aos="fade-left" data-aos-delay="300"
+        data-aos-once="false">
+      <img src="images/people-2.png" alt="people" data-aos="fade-left" data-aos-delay="600" data-aos-once="false">
+
+    </div>
+  </div>
+
+
+  <!-- about me -->
+  <div class="container flex jc-between ai-center py-40">
+
+    <!-- card -->
+    <ol class="about-card flex wrap">
+
+      <li data-aos="fade-down-right" data-aos-once="false">
+        <h3>01</h3>
+        <h3>Attention to Detail</h3>
+        <p>Meticulous code analysis and optimization.</p>
+      </li>
+
+      <li data-aos="fade-down-left" data-aos-once="false">
+        <h3>02</h3>
+        <h3>Adaptability</h3>
+        <p>Swift learning of new technologies.</p>
+      </li>
+
+      <li data-aos="fade-up-right" data-aos-once="false">
+        <h3>03</h3>
+        <h3>Problem Solver</h3>
+        <p>Identifying and resolving issues.</p>
+      </li>
+
+      <li data-aos="fade-up-left" data-aos-once="false">
+        <h3>04</h3>
+        <h3>Team Player</h3>
+        <p>Collaborates and shares ideas.</p>
+      </li>
+
+    </ol>
+
+    <!-- description -->
+    <div class="about-desc">
+      <h2 class="title mb-9" data-aos="fade-down">About Me</h2>
+      <p class="fz-24" data-aos="fade-left">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript,
+        jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always
+        learning new technologies and techniques to stay up-to-date in the field.</p>
+    </div>
+
+  </div>
+
+
+  <!-- contact me -->
+  <div class="contact" id="contact_me">
+    <div class="container flex jc-between ai-center">
+
+      <div class="flex" data-aos="fade-right">
+        <h2 class="title white mr-4">contact me</h2>
+        <img src="images/trending_flat_black_24dp 1.png" alt="trend" class="trend">
+      </div>
+
+      <ul class="link flex" data-aos="fade-left">
+        <li><a href="#"><img src="images/discord.png" alt="discord"></a></li>
+        <li><a href="#"><img src="images/instagram.png" alt="instagram"></a></li>
+        <li><a href="#"><img src="images/message.png" alt="message"></a></li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <!-- my projects -->
+  <div class="project container py-40">
+
+    <h2 class="title mb-4" data-aos="fade-down">my projects</h2>
+
+    <div class="flex">
+
+      <img src="images/Rectangle 10.png" alt="photo" class="mr-6" data-aos="fade-right" data-aos-once="false">
+
+      <div>
+
+        <div class="flex mb-7">
+          <img src="images/Rectangle 15.png" alt="photo" class="mr-6" data-aos="fade-up">
+
+          <div class="flex column jc-between ai-start" data-aos="fade-left">
+            <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride
+              in creating clean, efficient, and user-friendly code.</p>
+
+            <a href="#" class="link-btn black">
+              <span>SEE MORE</span>
+              <img src="images/arrow_outward-white.png" alt="arrow">
+            </a>
+          </div>
+        </div>
+
+        <div class="flex jc-between">
+          <img src="images/Rectangle 14.png" alt="photo" data-aos="zoom-out-up" data-aos-once="false">
+          <img src="images/Rectangle 29.png" alt="photo" data-aos="zoom-in-left" data-aos-once="false">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- footer -->
+  <p class="footer">
+    all rights reserved @hexschool2023
+  </p>
+
+
+
+  <!-- AOS -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+
 </html>
