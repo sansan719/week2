@@ -1,22 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-2d761428.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-4cfea7bd.css">
-  </head>
-  <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/web-layout-training-vite/assets/cat-0c0689ae.jpg" style="width: 300px;" alt="cat">
 
-    <footer class="footer">我是 footer</footer>
-    
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week2</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  
+  
+  <link rel="stylesheet" href="/week2/assets/index-4751c021.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="header">
+    <ul class="container flex jc-between">
+      <li data-aos="flip-left">WILLIAM LEE</li>
+      <li data-aos="flip-left">BASED IN TAIWAN</li>
+      <li data-aos="flip-left">CURRENTLY FRONT END<br />ENGINEER AT HEXSCHOOL</li>
+      <li data-aos="flip-left"><a href="#contact_me">CONTACT ME</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- banner -->
+  <div class="banner">
+    <div class="container flex ai-center">
+
+      <img src="/week2/assets/people-88199928.png" alt="william" class="mr-6" data-aos="zoom-in-up">
+
+      <div class="flex column">
+        <h2 class="title white" data-aos="fade-left">Hi<br />I’m a front-end developer</h2>
+        <h1 data-aos="fade-up">William</h1>
+        <a href="#contact_me" class="link-btn white as-end" data-aos="fade-up">
+          <span>contact me</span>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAElBMVEUAAAAdGx8gGCAgICAcGx8cGx9PhRuBAAAABXRSTlMA3yAgv0pLYyEAAAA8SURBVBjTY6AGCAUDVA4cMIsicQwDQ5EkhEKRJBRCkSQYQpEkgByEBJADlwByEBJwDgtQAs5hcmKgCQAA4ZULMKZkg30AAAAASUVORK5CYII=" alt="arrow">
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- introduction -->
+  <div class="intro py-40">
+    <div class="container flex jc-between">
+
+      <!-- description -->
+      <div class="desc">
+        <h2 class="title mb-9" data-aos="fade-right">Introduction</h2>
+
+        <p class="fz-24 mb-8" data-aos="fade-right">Hi, I'm William Lee, a Front-End Developer with a passion for
+          building beautiful and responsive websites that provide an optimal user experience.</p>
+
+        <div class="sparkle flex" data-aos="fade-up" data-aos-once="false">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABiCAMAAAAGNCGhAAAApVBMVEUAAADk5OTZ2dnZ2dna2tra2trZ2dna2tra2trc3Nza2trZ2dnZ2dna2tra2trY2NjX19fa2trZ2dnZ2dnZ2dna2trZ2dna2trZ2dna2tra2trZ2dna2tra2trZ2dnZ2dnZ2dna2trZ2dna2trZ2dnZ2dnZ2dna2trZ2dnZ2dna2trZ2dna2trZ2dna2tra2tra2trZ2dnZ2dnZ2dna2trb29vZ2dkNiIHEAAAAN3RSTlMABDE1KEItIggMZmFcRj0VD3FsUR6BfBsYOhJNkIvDWIZVzaagm0olvHW2sKuVd9WW7OXg24b0uqY21wAAAjBJREFUSMe11+lSq0AQBeA7LLJEgbgRXEgAzaaJRI3v/2h3Jgw2yWGasiz5TdWX00z3dP799BHity/4wcALSSJ4IY4FL6RpwAvX14lghcWCNYKJ46Q+K1hn0uAE2/YYw584WeZMfEY4iyKLDBQ823Vt704wwnyuDEa4v49kDoNw51luUbhWJwcK06nZCJRwft41ULgajQrKAYJ9MQ1DbZiEy0ttmITxWBoWGSBst+H0wiYDhNvbxghMws3NeHRFBgqzmcEI0kZ4fCSjV3h46BgorGb1hoxe4fmZjF7h6anX8ONWqKpaG7F/IswPwutra6RBr/DygoYSFo2wqdbrajNbhYU2SMi0sFweGSgsczRUS7YZ1nm+ruq9NkSPUJbamGffhkg8K9JCXpYdQzepUFUqwu1BeHuThvweypDDRgsOCZ+fYEiBMpQfH2AcMhSqSkp4f2+MlTZA2O06hqMMNbgiEna7jqGGzanw9XVqDL/QIfJjIlIE/kgoxGBMZbitAYWCj4mlJoM+Vk1Ce6DIKJddAQ49HBg0VIa9FvzBQwuti8eeml8duqZx6j00J9N6aGihzUBGpptTZoARww0QHBBHGdDY1zUI3BjEUY2DFEfxCgR2mGOtSGAulEwLaBSjMQlwMbOXGtWKBDDi9mLVx9lggMBd7mjYsB6gAQK3omCtpCEzQJVgTWKWRbVopT67qukqGQ2LBEMOyMAvnMMrKx68NPjd2iwSlYE1gr/+d4DPf8Z+fzgnDRHeAAAAAElFTkSuQmCC" alt="sparkle">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABiCAMAAAAGNCGhAAAApVBMVEUAAADk5OTZ2dnZ2dna2tra2trZ2dna2tra2trc3Nza2trZ2dnZ2dna2tra2trY2NjX19fa2trZ2dnZ2dnZ2dna2trZ2dna2trZ2dna2tra2trZ2dna2tra2trZ2dnZ2dnZ2dna2trZ2dna2trZ2dnZ2dnZ2dna2trZ2dnZ2dna2trZ2dna2trZ2dna2tra2tra2trZ2dnZ2dnZ2dna2trb29vZ2dkNiIHEAAAAN3RSTlMABDE1KEItIggMZmFcRj0VD3FsUR6BfBsYOhJNkIvDWIZVzaagm0olvHW2sKuVd9WW7OXg24b0uqY21wAAAjBJREFUSMe11+lSq0AQBeA7LLJEgbgRXEgAzaaJRI3v/2h3Jgw2yWGasiz5TdWX00z3dP799BHity/4wcALSSJ4IY4FL6RpwAvX14lghcWCNYKJ46Q+K1hn0uAE2/YYw584WeZMfEY4iyKLDBQ823Vt704wwnyuDEa4v49kDoNw51luUbhWJwcK06nZCJRwft41ULgajQrKAYJ9MQ1DbZiEy0ttmITxWBoWGSBst+H0wiYDhNvbxghMws3NeHRFBgqzmcEI0kZ4fCSjV3h46BgorGb1hoxe4fmZjF7h6anX8ONWqKpaG7F/IswPwutra6RBr/DygoYSFo2wqdbrajNbhYU2SMi0sFweGSgsczRUS7YZ1nm+ruq9NkSPUJbamGffhkg8K9JCXpYdQzepUFUqwu1BeHuThvweypDDRgsOCZ+fYEiBMpQfH2AcMhSqSkp4f2+MlTZA2O06hqMMNbgiEna7jqGGzanw9XVqDL/QIfJjIlIE/kgoxGBMZbitAYWCj4mlJoM+Vk1Ce6DIKJddAQ49HBg0VIa9FvzBQwuti8eeml8duqZx6j00J9N6aGihzUBGpptTZoARww0QHBBHGdDY1zUI3BjEUY2DFEfxCgR2mGOtSGAulEwLaBSjMQlwMbOXGtWKBDDi9mLVx9lggMBd7mjYsB6gAQK3omCtpCEzQJVgTWKWRbVopT67qukqGQ2LBEMOyMAvnMMrKx68NPjd2iwSlYE1gr/+d4DPf8Z+fzgnDRHeAAAAAElFTkSuQmCC" alt="sparkle">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABiCAMAAAAGNCGhAAAApVBMVEUAAADk5OTZ2dnZ2dna2tra2trZ2dna2tra2trc3Nza2trZ2dnZ2dna2tra2trY2NjX19fa2trZ2dnZ2dnZ2dna2trZ2dna2trZ2dna2tra2trZ2dna2tra2trZ2dnZ2dnZ2dna2trZ2dna2trZ2dnZ2dnZ2dna2trZ2dnZ2dna2trZ2dna2trZ2dna2tra2tra2trZ2dnZ2dnZ2dna2trb29vZ2dkNiIHEAAAAN3RSTlMABDE1KEItIggMZmFcRj0VD3FsUR6BfBsYOhJNkIvDWIZVzaagm0olvHW2sKuVd9WW7OXg24b0uqY21wAAAjBJREFUSMe11+lSq0AQBeA7LLJEgbgRXEgAzaaJRI3v/2h3Jgw2yWGasiz5TdWX00z3dP799BHity/4wcALSSJ4IY4FL6RpwAvX14lghcWCNYKJ46Q+K1hn0uAE2/YYw584WeZMfEY4iyKLDBQ823Vt704wwnyuDEa4v49kDoNw51luUbhWJwcK06nZCJRwft41ULgajQrKAYJ9MQ1DbZiEy0ttmITxWBoWGSBst+H0wiYDhNvbxghMws3NeHRFBgqzmcEI0kZ4fCSjV3h46BgorGb1hoxe4fmZjF7h6anX8ONWqKpaG7F/IswPwutra6RBr/DygoYSFo2wqdbrajNbhYU2SMi0sFweGSgsczRUS7YZ1nm+ruq9NkSPUJbamGffhkg8K9JCXpYdQzepUFUqwu1BeHuThvweypDDRgsOCZ+fYEiBMpQfH2AcMhSqSkp4f2+MlTZA2O06hqMMNbgiEna7jqGGzanw9XVqDL/QIfJjIlIE/kgoxGBMZbitAYWCj4mlJoM+Vk1Ce6DIKJddAQ49HBg0VIa9FvzBQwuti8eeml8duqZx6j00J9N6aGihzUBGpptTZoARww0QHBBHGdDY1zUI3BjEUY2DFEfxCgR2mGOtSGAulEwLaBSjMQlwMbOXGtWKBDDi9mLVx9lggMBd7mjYsB6gAQK3omCtpCEzQJVgTWKWRbVopT67qukqGQ2LBEMOyMAvnMMrKx68NPjd2iwSlYE1gr/+d4DPf8Z+fzgnDRHeAAAAAElFTkSuQmCC" alt="sparkle">
+        </div>
+      </div>
+
+      <img src="/week2/assets/sparkle-99e73bbf.png" alt="sparkle" data-aos="fade-left" data-aos-once="false">
+      <img src="/week2/assets/photographer-e1bf1579.png" alt="photographer" data-aos="fade-left" data-aos-delay="300"
+        data-aos-once="false">
+      <img src="/week2/assets/people-2-922497d2.png" alt="people" data-aos="fade-left" data-aos-delay="600" data-aos-once="false">
+
+    </div>
+  </div>
+
+
+  <!-- about me -->
+  <div class="container flex jc-between ai-center py-40">
+
+    <!-- card -->
+    <ol class="about-card flex wrap">
+
+      <li data-aos="fade-down-right" data-aos-once="false">
+        <h3>01</h3>
+        <h3>Attention to Detail</h3>
+        <p>Meticulous code analysis and optimization.</p>
+      </li>
+
+      <li data-aos="fade-down-left" data-aos-once="false">
+        <h3>02</h3>
+        <h3>Adaptability</h3>
+        <p>Swift learning of new technologies.</p>
+      </li>
+
+      <li data-aos="fade-up-right" data-aos-once="false">
+        <h3>03</h3>
+        <h3>Problem Solver</h3>
+        <p>Identifying and resolving issues.</p>
+      </li>
+
+      <li data-aos="fade-up-left" data-aos-once="false">
+        <h3>04</h3>
+        <h3>Team Player</h3>
+        <p>Collaborates and shares ideas.</p>
+      </li>
+
+    </ol>
+
+    <!-- description -->
+    <div class="about-desc">
+      <h2 class="title mb-9" data-aos="fade-down">About Me</h2>
+      <p class="fz-24" data-aos="fade-left">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript,
+        jQuery, and React. I have a strong understanding of user experience design and accessibility. I'm always
+        learning new technologies and techniques to stay up-to-date in the field.</p>
+    </div>
+
+  </div>
+
+
+  <!-- contact me -->
+  <div class="contact" id="contact_me">
+    <div class="container flex jc-between ai-center">
+
+      <div class="flex" data-aos="fade-right">
+        <h2 class="title white mr-4">contact me</h2>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkBAMAAACCzIhnAAAAFVBMVEUAAAD///////////////////////9Iz20EAAAABnRSTlMAIDDvgBDbxs+GAAAAfklEQVRYw+3VuwmAUBBEUVEwNzGeGqYIc2tYmP5L0FxQxmBRmJsflsf7DSmllNKfGn0ywSYzfVKwieiTgk1EnxRsIvqkYBPRJNcx+3LbquuYTc+dY2wi+qRgE7GDFBqWX/C38sWBsQk7Dj87LjI7HiV2PLDs+CzGIaWUUvpeB1KIm+Pb3WboAAAAAElFTkSuQmCC" alt="trend" class="trend">
+      </div>
+
+      <ul class="link flex" data-aos="fade-left">
+        <li><a href="#"><img src="/week2/assets/discord-28fca020.png" alt="discord"></a></li>
+        <li><a href="#"><img src="/week2/assets/instagram-07b73d75.png" alt="instagram"></a></li>
+        <li><a href="#"><img src="/week2/assets/message-5c9eb324.png" alt="message"></a></li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <!-- my projects -->
+  <div class="project container py-40">
+
+    <h2 class="title mb-4" data-aos="fade-down">my projects</h2>
+
+    <div class="flex">
+
+      <img src="/week2/assets/Rectangle 10-dff989e7.png" alt="photo" class="mr-6" data-aos="fade-right" data-aos-once="false">
+
+      <div>
+
+        <div class="flex mb-7">
+          <img src="/week2/assets/Rectangle 15-0ac72843.png" alt="photo" class="mr-6" data-aos="fade-up">
+
+          <div class="flex column jc-between ai-start" data-aos="fade-left">
+            <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride
+              in creating clean, efficient, and user-friendly code.</p>
+
+            <a href="#" class="link-btn black">
+              <span>SEE MORE</span>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMAIN+/1qBXtwAAADtJREFUGNNjoAZwAQNUDhwwqiBxhJxckCQUXZAkBFyQJBhckCSAHIQEkAOXAHIQEnAOM1ACIWPIQBMAAGm6CR3jD7dzAAAAAElFTkSuQmCC" alt="arrow">
+            </a>
+          </div>
+        </div>
+
+        <div class="flex jc-between">
+          <img src="/week2/assets/Rectangle 14-52873dc8.png" alt="photo" data-aos="zoom-out-up" data-aos-once="false">
+          <img src="/week2/assets/Rectangle 29-9625c254.png" alt="photo" data-aos="zoom-in-left" data-aos-once="false">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- footer -->
+  <p class="footer">
+    all rights reserved @hexschool2023
+  </p>
+
+
+
+  <!-- AOS -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+
 </html>
